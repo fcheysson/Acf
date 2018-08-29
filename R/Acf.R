@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' e <- rnorm(100)
-#' x <- filter(e, c(.5, -.3))
+#' x <- filter(e, c(.5, -.3), sides=1)[-1]
 #' Acf(x)
 Acf <- function(x, lag.max=NULL, ...) {
 	mar.default <- par("mar")

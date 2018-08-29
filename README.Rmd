@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# Acf
+
+This package provides a wrapper for R functions `acf` and `pacf` for simultaneous plotting of acf and pacf.
+
+## Installation
+
+You can install the released version of Acf from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("Acf")
+```
+
+## Example
+
+Let's test `Acf` on an MA(2) series which plots its acf and pacf.
+
+```{r example}
+library(Acf)
+e <- rnorm(100)
+x <- filter(e, c(.5, -.3), sides=1)[-1]
+Acf(x)
+```

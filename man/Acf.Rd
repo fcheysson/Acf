@@ -2,7 +2,7 @@
 % Please edit documentation in R/Acf.R
 \name{Acf}
 \alias{Acf}
-\title{Autocorrelation and partial autocorrelation function for time series}
+\title{Autocorrelation and partial autocorrelation functions for time series}
 \usage{
 Acf(x, lag.max = NULL, ...)
 }
@@ -18,6 +18,6 @@ This function is a wrapper for R native functions `acf` and `pacf` which provide
 }
 \examples{
 e <- rnorm(100)
-x <- filter(e, c(.5, -.3))
+x <- filter(e, c(.5, -.3), sides=1)[-1]
 Acf(x)
 }
