@@ -2,7 +2,7 @@
 % Please edit documentation in R/Acf-package.R
 \docType{package}
 \name{Acf-package}
-\alias{Acf}
+\alias{Acf-package}
 \alias{Acf-package}
 \title{Acf: Short and sweet function for plotting acf and pacf}
 \description{
