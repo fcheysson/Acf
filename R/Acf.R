@@ -1,4 +1,4 @@
-#' @title Autocorrelation and partial autocorrelation function for time series
+#' @title Autocorrelation and partial autocorrelation functions for time series
 #'
 #' @description This function is a wrapper for R native functions `acf` and `pacf` which provides better plots.
 #'
