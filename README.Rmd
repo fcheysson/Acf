@@ -26,11 +26,11 @@ install.packages("Acf")
 
 ## Example
 
-Let's test `Acf` on an MA(2) series which plots its acf and pacf.
+Let's test `Acf` on an AR(2) series which plots its acf and pacf.
 
 ```{r example}
 library(Acf)
-e <- rnorm(100)
-x <- filter(e, c(.5, -.3), sides=1)[-1]
+e <- rnorm(1000)
+x <- filter(e, c(.5, .3), method="recursive")
 Acf(x)
 ```

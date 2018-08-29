@@ -17,7 +17,7 @@ Acf(x, lag.max = NULL, ...)
 This function is a wrapper for R native functions `acf` and `pacf` which provides better plots.
 }
 \examples{
-e <- rnorm(100)
-x <- filter(e, c(.5, -.3), sides=1)[-1]
+e <- rnorm(1000)
+x <- filter(e, c(.5, .3), method="recursive")
 Acf(x)
 }

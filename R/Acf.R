@@ -9,8 +9,8 @@
 #' @export
 #'
 #' @examples
-#' e <- rnorm(100)
-#' x <- filter(e, c(.5, -.3), sides=1)[-1]
+#' e <- rnorm(1000)
+#' x <- filter(e, c(.5, .3), method="recursive")
 #' Acf(x)
 Acf <- function(x, lag.max=NULL, ...) {
 	mar.default <- par("mar")
