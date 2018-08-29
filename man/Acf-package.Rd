@@ -3,7 +3,7 @@
 \docType{package}
 \name{Acf-package}
 \alias{Acf-package}
-\alias{Acf-package}
+\alias{_PACKAGE}
 \title{Acf: Short and sweet function for plotting acf and pacf}
 \description{
 This is a wrapper for R functions acf and pacf which provides simultaneous plots for acf and pacf.

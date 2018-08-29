@@ -2,6 +2,7 @@
 % Please edit documentation in R/Acf.R
 \name{Acf}
 \alias{Acf}
+\alias{acf,Acf}
 \title{Autocorrelation and partial autocorrelation functions for time series}
 \usage{
 Acf(x, lag.max = NULL, ...)
